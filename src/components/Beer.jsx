@@ -44,5 +44,4 @@ Beer.propTypes = {
   beerId: PropTypes.string.isRequired
 };
 
-
 export default connect()(Beer);

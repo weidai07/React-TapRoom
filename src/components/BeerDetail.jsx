@@ -11,7 +11,7 @@ function BeerDetail(props) {
     <div style={background}>
       <hr />
       <h1>{props.selectedBeer.names} - {props.selectedBeer.location}</h1>
-      <h2>Submitted {props.selectedBeer.formattedWaitTime} ago</h2>
+      <h2>Ordered {props.selectedBeer.formattedWaitTime} Ago</h2>
       <h4><em>{props.selectedBeer.issue}</em></h4>
       <hr />
     </div>

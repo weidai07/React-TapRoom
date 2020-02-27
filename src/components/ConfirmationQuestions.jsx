@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function ConfirmationQuestions(props) {
   return (
     <div>
-      <p style={header}>Have you gone through all the steps on the Learn How to Program debugging lesson?</p>
+      <p style={header}>Are you sure you want free beer?</p>
       <button style={submitButton} onClick={props.onSubmitQuestionsAnswered}>Yes</button>
     </div>
   );
@@ -14,11 +14,6 @@ function ConfirmationQuestions(props) {
 ConfirmationQuestions.propTypes = {
   onSubmitQuestionsAnswered: PropTypes.func
 };
-
-export default ConfirmationQuestions;  
-
-
-
 
 let header = {
   textAlign: 'center',
@@ -32,3 +27,5 @@ let submitButton = {
   margin: '25px auto 25px 46%',
   borderRadius: '5px'
 };
+
+export default ConfirmationQuestions; 

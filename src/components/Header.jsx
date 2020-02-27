@@ -7,16 +7,15 @@ function Header() {
   var headerStyles = {
     backgroundColor: 'red',
     margin: '100px auto 100px auto',
-    // textAlign: 'center',
+    textAlign: 'center',
     fontSize: '40px',
-    // display: 'inline-block',
+    display: 'inline-block center',
     padding: '10px'
   };
 
   return (
     <div>
-      <h1 style={headerStyles} >TapRoom</h1>
-      {/* <Link to="/">Home</Link> | <Link to="/newbeer">Create Beer</Link> */}
+      <h1 style={headerStyles} >Tap Room</h1>
     </div>
   );
 }

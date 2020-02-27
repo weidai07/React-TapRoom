@@ -11,7 +11,7 @@ export default function Navbar() {
   var listElements = {
     float: 'left',
     fontSize: '20px',
-    border: '2px solid #94c9ff',
+    border: '2px solid Red',
     color: '#daf3ff',
     padding: '6px',
     listStyleType: 'none',
@@ -22,7 +22,7 @@ export default function Navbar() {
     float: 'right',
     padding: '10px',
     width: '20%',
-    border: '2px solid DeepSkyBlue',
+    border: '2px solid Red',
     borderRadius: '20px',
     textAlign: 'left',
     marginRight: '40px',
@@ -34,7 +34,7 @@ export default function Navbar() {
     float: 'right',
     padding: '10px',
     width: '8%',
-    border: '2px solid DeepSkyBlue',
+    border: '2px solid Red',
     borderRadius: '20px',
     fontSize: '20px',
     outline: 'none'
@@ -44,9 +44,9 @@ export default function Navbar() {
     <div style={navContainer}>
       <ul>
         <Link to="/"><li style={listElements} >Home</li></Link>
-        <Link to="/newbeer"><li style={listElements} >Create Beer</li></Link>
-        <Link to="/test"><li style={listElements} >Nothing</li></Link>
-        <Link to="/admin"><li style={listElements} >Admin</li></Link>
+        <Link to="/newbeer"><li style={listElements} >Order Beer</li></Link>
+        <Link to="/test"><li style={listElements} >Error Page</li></Link>
+        <Link to="/admin"><li style={listElements} >Administrator</li></Link>
       </ul>
       <input
         type='text'
@@ -57,7 +57,7 @@ export default function Navbar() {
         type='text'
         id='searchBar'
         style={searchInputField}
-        placeholder='Search Bar' />
+        placeholder='Search Webpage' />
       <br />
     </div>
   );

@@ -4,8 +4,6 @@ import BeerList from './BeerList';
 import BeerDetail from './BeerDetail';
 import { connect } from 'react-redux';
 
-
-
 function Admin(props) {
 
     let background = {
@@ -30,11 +28,8 @@ function Admin(props) {
 
     return (
         <div style={background}>
-
-            <h2 style={footerAdmin}>Admin</h2>
-
+            <h2 style={footerAdmin}>Administrator</h2>
             {optionalSelectedBeerContent}
-
             <BeerList
                 beerList={props.beerList}
                 currentRouterPath={props.currentRouterPath} />
@@ -42,13 +37,11 @@ function Admin(props) {
     );
 }
 
-
 Admin.propTypes = {
     beerList: PropTypes.array,
     currentRouterPath: PropTypes.string.isRequired,
     selectedBeer: PropTypes.string
 };
-
 
 const mapStateToProps = state => {
     return {
@@ -56,6 +49,5 @@ const mapStateToProps = state => {
         beerList: state.masterBeerList
     };
 };
-
 
 export default connect(mapStateToProps)(Admin);

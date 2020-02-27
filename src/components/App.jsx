@@ -74,7 +74,6 @@ class App extends React.Component {
   }
 }
 
-
 App.propTypes = {
   masterBeerList: PropTypes.object
 };
@@ -85,43 +84,4 @@ const mapStateToProps = state => {
   };
 };
 
-
 export default withRouter(connect(mapStateToProps)(App));
-
-
-
-
-
-
-
-
-
-// App.jsx
-
-
-
-//   < Route path = '/newbeer' render = {() => <NewBeerControl
-//     onSubmitNewBeerForm={this.handleAddingNewBeerToList} />} />
-
-
-
-// NewBeerControl
-
-
-
-// if (this.state.formVisibleOnPage) {
-//   currentlyVisibleContent = <NewBeerForm
-//     onSubmitNewBeerForm={this.props.onSubmitNewBeerForm} />;
-
-
-
-// NewBeerForm
-
-
-//   function handleNewBeerFormSubmission(event) {
-//     event.preventDefault();
-//     props.onSubmitNewBeerForm({ names: _names.value, location: _location.value, issue: _issue.value });
-//     _names.value = '';
-//     _location.value = '';
-//     _issue.value = '';
-//   }
