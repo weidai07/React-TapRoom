@@ -6,7 +6,7 @@
 
 This project is demostration of my knowledge in React to date. 
 
-Previous Version of Project: 
+Previous Versions of Project: 
 https://github.com/weidai07/TapRoom 
 https://github.com/weidai07/Tap-Room 
 https://github.com/weidai07/TapRoom1 
